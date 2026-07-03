@@ -1,9 +1,9 @@
 # Large Language Models as Explainable AI Ensemble Aggregators for Business Review Sentiment Analysis: A Comparative Study with Classical Ensembles
 
 ## Article
-* **Journal**: Applied Sciences (Under Review)
-* **Title**: pending
-* **DOI**: pending
+* **Journal**: Applied Sciences
+* **Title**: [Large Language Models as Explainable AI Ensemble Aggregators for Business Review Sentiment Analysis: A Comparative Study with Classical Ensembles](https://www.mdpi.com/2076-3417/16/13/6479)
+* **DOI**: [https://doi.org/10.3390/app16136479](https://doi.org/10.3390/app16136479)
 
 ## Authors
 * **Adj. Asst. Prof. Konstantinos I. Roumeliotis | University of Peloponnese**
@@ -12,7 +12,7 @@
 * **Prof. Costas Vassilakis | University of Peloponnese**
 
 ## Abstract
-pending
+Online business reviews encode rich customer sentiment that is critical for commercial decision making, yet accurately predicting star ratings from free text remains a challenging five-class classification problem. Classical ensemble methods—Soft Voting, Weighted Voting, and Stacking—aggregate complementary base-model outputs to improve predictive performance, but they produce opaque decisions that are unintelligible to business stakeholders. This paper proposes using a large language model (LLM), specifically unsloth/LLaMA-3.3-70B-Instruct, as an Explainable AI (XAI) ensemble aggregator: the LLM receives the predictions and confidence scores of four heterogeneous base models (Logistic Regression, Support Vector Machine, Naïve Bayes, and BERT-base-uncased) and reasons over them to produce both a final star-rating prediction and a natural-language explanation. We evaluate the full pipeline on 10,000-sample balanced and natural-distribution test sets derived from the Yelp Academic Dataset, with additional cross-lingual validation on Spanish Amazon Reviews. The LLM aggregator (LLAMA_AGG) achieves the highest macro-F1 on both pipelines (0.6800 on balanced; 0.6720 on natural) and the best ordinal calibration (QWK = 0.9111 on balanced; 0.9337 on natural), outperforming all classical aggregators and base models. A detailed Explainable AI analysis reveals that the LLM revises 28.07% of its standalone predictions after observing the ensemble outputs, improving the accuracy by +22.2 percentage points on the revised cases. The aggregator corrects severe polar bias in the standalone LLM (±0.35 recall improvement on mid-range star classes) and produces longer explanations when evidence is conflicted—a quantitative signal of deliberative reasoning. A formal human evaluation with two judges confirms high explanation faithfulness (4.47/5) and readability (4.82/5). Model scale ablation shows an 8B parameter variant achieves 90.8% agreement with the 70B model, enabling practical deployment. These findings demonstrate that Explainable AI can be achieved through LLM-based ensemble aggregation, establishing a principled approach for business-review sentiment analysis.
 
 ## Keywords
-pending
+Explainable AI; large language models; business reviews; sentiment analysis; ensemble learning; LLaMA; BERT; Yelp; natural language processing; meta-reasoning; star rating prediction; Soft Voting; Stacking; chain-of-thought
